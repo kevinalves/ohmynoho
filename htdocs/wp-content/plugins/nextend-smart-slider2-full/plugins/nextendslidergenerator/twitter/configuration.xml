@@ -1,0 +1,8 @@
+<root>
+    <params name="basic" label="Basic parameters">
+        <param name="apikey" type="text" label="Consumer key" default="" />
+        <param name="apisecret" type="text" label="Consumer secret" default="" />
+        <param name="token" type="twittertoken" label="Token" default="" />
+        <param name="tokensecret" type="text" label="Token secret" default="" />
+    </params>
+</root>

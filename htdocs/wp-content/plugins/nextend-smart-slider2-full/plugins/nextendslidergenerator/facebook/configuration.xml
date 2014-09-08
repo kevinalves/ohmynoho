@@ -1,0 +1,7 @@
+<root>
+    <params name="basic" label="Basic parameters">
+        <param name="apikey" type="text" label="App ID" default="" />
+        <param name="apisecret" type="text" label="App Secret" default="" />
+        <param name="token" type="facebooktoken" label="Token" default="" />
+    </params>
+</root>

@@ -1,0 +1,7 @@
+<root>
+    <params name="basic" label="Basic parameters">
+        <param name="apikey" type="text" label="Client ID" default="" />
+        <param name="apisecret" type="text" label="Client secret" default="" />
+        <param name="token" type="youtubetoken" label="Token" default="" />
+    </params>
+</root>

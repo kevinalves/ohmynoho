@@ -1,0 +1,7 @@
+<root>
+    <params name="basic" label="Basic parameters">
+        <param name="apikey" type="text" label="Api key" default="" />
+        <param name="apisecret" type="text" label="Api secret" default="" />
+        <param name="token" type="flickrtoken" label="Token" default="" />
+    </params>
+</root>
