@@ -14,13 +14,6 @@
  * @package WordPress
  */
 
-// Use these settings on the local server
-if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
-  include( dirname( __FILE__ ) . '/wp-config-local.php' );
-  
-// Otherwise use the below settings (on live server)
-} else {
-
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'comOhMy');
@@ -39,8 +32,6 @@ define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
-
-}
 
 /**#@+
  * Authentication Unique Keys and Salts.
