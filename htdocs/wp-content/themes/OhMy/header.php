@@ -28,7 +28,8 @@
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-114x114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-precomposed.png">
-		
+		<link href='http://fonts.googleapis.com/css?family=Raleway:500,300,800' rel='stylesheet' type='text/css'>
+
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
@@ -52,7 +53,7 @@
 
 	<?php get_template_part('parts/off-canvas-menu'); ?>
 
-	<?php get_template_part('parts/top-bar'); ?>
+	<div class="hide-for-home-page"> <?php get_template_part('parts/top-bar'); ?> </div>
 
-<section class="container" role="document">
+<!-- <section class="container" role="document"> -->
 	<?php do_action('foundationPress_after_header'); ?>

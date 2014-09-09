@@ -69,8 +69,20 @@ img.alignright {
 
 
 // Add some whitespace between top bar and content
-.top-bar-container, .tab-bar {
+.top-bar-container {
 	margin-bottom: rem-calc(32);
+	z-index: 1000;
+	position: absolute;
+	bottom:10px;
+}
+
+.tab-bar{
+	margin-bottom:0px;
+	z-index: 1000;
+}
+
+#homepage-hero{
+	position:relative;
 }
 
 // Fix the issue where the WP adminbar overlaps the mobile menu
@@ -83,7 +95,9 @@ img.alignright {
  * ----------------------------------------------------------------------------
  */
 
-// Insert styles here
+h1,h2,h3{
+	font-weight: lighter;
+}
 
 
 /**
@@ -99,6 +113,18 @@ img.alignright {
 	background: #202020;
 }
 
+.hide-for-home-page{
+	display:none !important;
+	displya:none;
+	opacity: 0px;
+}
+
+#searchsubmit{
+	border-top:2px solid #fff;
+	border-bottom:2px solid #fff;
+	border-right:2px solid #fff;
+}
+
 // Add some whitespace above the footer for medium-up screens
 @media #{$medium-up} {
 	footer.row {
@@ -112,6 +138,17 @@ img.alignright {
  * ----------------------------------------------------------------------------
  */
 
+ .section{
+ 	padding:50px 0px;
+ }
+
+ .bg-purple{
+ 	background-color:$primary-color;
+ 	h1,h2,h3,h4,h5,h6,p{
+ 	color:#fff;
+ 	}
+ }
+
 
 	/**
 	 * 4.1 Pages
@@ -123,7 +160,7 @@ img.alignright {
 	#homepage-hero {
 		//background: url("http://foundation.zurb.com/assets/img/marquee-stars.svg") repeat scroll 0 0 #074E68;
 		//padding: rem-calc(20) 0;
-		margin: - rem-calc(32) 0 rem-calc(32);
+		margin: - rem-calc(0) 0 0;
 		position: relative;
 		text-align: left;
 		height: auto;
