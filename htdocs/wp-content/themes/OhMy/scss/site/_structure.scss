@@ -72,13 +72,30 @@ img.alignright {
 .top-bar-container {
 	margin-bottom: rem-calc(32);
 	z-index: 1000;
+	
+}
+
+.home{ 
+	.top-bar-container{
 	position: absolute;
-	bottom:10px;
+	}
+}
+
+.top-bar-container{
+	
+	.title{
+		max-width:180px;
+	}
 }
 
 .tab-bar{
 	margin-bottom:0px;
 	z-index: 1000;
+	.middle .title{
+		img{
+			max-width: 128px;
+		}
+	}
 }
 
 #homepage-hero{
@@ -113,10 +130,11 @@ h1,h2,h3{
 	background: #202020;
 }
 
-.hide-for-home-page{
-	display:none !important;
-	displya:none;
-	opacity: 0px;
+.home{
+	.hide-for-home-page{
+		display:none !important;
+		opacity: 0px;
+	}
 }
 
 #searchsubmit{
@@ -215,6 +233,19 @@ h1,h2,h3{
 	 */
 
 	// Insert styles here
+
+	// ---------------------- woocommerce stuff --------------------------//
+
+	ul.products{
+		list-style:none;
+		li{
+			width:25%;
+			height:auto;
+			display:inline-block;
+			border:1px solid $ghost;
+			align:top;
+		}
+	}
 
 
 /**
